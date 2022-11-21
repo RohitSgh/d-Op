@@ -57,7 +57,7 @@ const DetailView=()=>{
    const {id}= useParams();
    const {account} =useContext(DataContext)
    const navigate=useNavigate();
-  const url=post.picture?post.picture:'https://images.unsplash.com/photo-1543128639-4cb7e6eeef1b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGFwdG9wJTIwc2V0dXB8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80'
+  const url=post.picture?post.picture:'https://www.kindpng.com/picc/m/17-174872_transparent-write-clipart-pen-writing-clip-art-hd.png'
 
   useEffect(()=>{
      const fetchData=async ()=>{

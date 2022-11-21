@@ -7,7 +7,7 @@ import { FiUserX} from 'react-icons/fi';
 import './Header.css'
 
 const Component=styled(AppBar)`
-   background:#F4D03F;
+   background:#000000;
    color:#000
 `
 const Container=styled(Toolbar)`
@@ -25,9 +25,9 @@ const Header=()=>{
             <Component>
                 <Container>
                    <Link to={'/'}><ImHome></ImHome></Link>
-                   <Link to={'About'}><FcAbout /></Link>
-                   <Link to={'contact'}><FcCellPhone /></Link>
-                   <Link to={'Login'}><FiUserX /></Link>
+                    <Link to={'/about'}><FcAbout></FcAbout></Link>
+                    <Link to={'/contact'}><FcCellPhone></FcCellPhone></Link>
+                    <Link to={'/login'}><FiUserX></FiUserX></Link>
                 </Container>
             </Component>
         </div>

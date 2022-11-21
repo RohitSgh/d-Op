@@ -10,7 +10,8 @@ import Header from './components/header/Header';
 import CreatePost from './components/create/CreatePosts';
 import DetailView from './components/details/DetailView';
 import Update from './components/create/Update';
-import  {ContactUs} from './components/contactus/ContactUs'
+import  {ContactUs} from './components/contactus/ContactUs';
+import  {About} from './components/About/About';
 
 const PrivateRoute=({isAuthenticated,...props})=>{
    // outlet is used to get the route inside the child component
@@ -50,6 +51,9 @@ function App() {
             <Route path='/contact' element={<PrivateRoute isAuthenticated={isAuthenticated}/>}>
                   <Route path='/contact'  element={<ContactUs/>}/>
              </Route>
+              <Route path='/about' element={<PrivateRoute isAuthenticated={isAuthenticated}/>}>
+                  <Route path='/about'  element={<About/>}/>
+              </Route>
           </Routes>
         </div> 
       </BrowserRouter>

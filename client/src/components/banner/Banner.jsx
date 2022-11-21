@@ -2,9 +2,8 @@
 import {Box,Typography,styled} from '@mui/material'
 
 const Image=styled(Box)`
-  background: url(https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg) center/55% repeat-x #0000;
   width:100%;
-  height:50vh;
+  height: 30vh;
   display:flex;
   align-items: center;
   justify-content: center;
@@ -12,21 +11,30 @@ const Image=styled(Box)`
 
 `
 const Heading=styled(Typography)`
+  font-family: 'Comic Sans MS', cursive, sans-serif;
   font-size:70px;
-  color:#FFFFFF;
+  color:#FF0000;
+  align-items: center;
+  justify-content: center;
   line-height:1
 
 `
 const SubHeading=styled(Typography)`
+  font-family: 'Trebuchet MS', sans-serif;
+  font-style: bold;
   font-size:20px;
-  background:#FFFFFF;
+  margin:15px;
+  color:#0000FF;
+  align-items: center;
+  justify-content: center;
+  background:#EEEEEE;
 `
 
 const Banner=()=>{
     return (
-        <Image>
-            <Heading>Blog</Heading>
-            <SubHeading>Hello from d-Op</SubHeading>
+        <Image> 
+            <Heading>d-Op</Heading>
+            <SubHeading>distributed Opinion</SubHeading>
         </Image>
     )
 }
